@@ -1,0 +1,496 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+   
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        
+
+        transition: background-color 1s ease, color 3s ease;
+    }
+
+    /* Dark theme */
+    body.dark-mode {
+        background-color: black;
+        color: white;
+    }
+
+
+
+ 
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    mix-blend-mode: multiply;
+    /* or any color you want */
+  /* if you want a background image */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+
+    header {
+        z-index: 99;
+        position:relative;
+        display: flex;
+     justify-content: space-between;
+        align-items:center;
+        padding: 10px 2%;
+        background-color: white;
+        
+        
+    }
+
+    header.light {
+        background-color: #000000;
+       color: #f4f4f4;
+       transition: all ease 1s ;
+     
+    }
+    header.light a{
+        color: #fffafa;
+    }
+
+
+nav ul{
+    display: flex;
+    
+}
+nav ul li {
+    margin: 0 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none ;
+    font-size: 18px;
+}
+
+section {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+#home {
+    position: relative;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px 2%;
+  
+}
+
+#home.light{
+    color: #000000;
+
+}
+#logo.light{
+    color: #ffffff;
+}
+
+#about p{
+          font-family: 'Georgia', serif;
+        font-size: 1.1em;
+        line-height: 1.6;
+        color: #555;
+        
+        margin-bottom: 20px;
+        letter-spacing: 0.5px;
+        text-align: center;
+        animation: typing 3s steps(80) 1s 1 normal both, blink 0.75s step-end infinite;
+      }
+      @keyframes typing {
+        from {
+       opacity: 0.3;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+  
+      /* Blinking cursor animation */
+      @keyframes blink {
+        50% {
+          border-color: transparent;
+        }
+      }
+
+h1, h2 {
+    font-weight: normal;
+}
+#about p.lit{
+    color:white;
+}
+
+#projects .project {
+    margin: 20px 0;
+}
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 250px; /* Set the max width you want */
+    margin: auto;
+    border: 5px solid rgb(219, 217, 217);
+    overflow: hidden;
+    box-shadow: 5px 2px 5px black;
+    border-radius: 10px;
+    mask-image: linear-gradient(to bottom ,  black 25% ,transparent 100%); /* Hide images outside of the container */
+  }
+  
+  .carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Smooth sliding effect */
+  }
+  .carousel-slide2 {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Smooth sliding effect */
+  }
+  .carousel-slide3 {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Smooth sliding effect */
+  }
+  .carousel-slide4 {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Smooth sliding effect */
+  }
+  
+  .pre-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 5px solid rgb(242, 242, 242);
+    border-radius: 8px;
+   
+  }
+  
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 10;
+  }
+  
+  .prev2 {
+    left: 10px;
+  }
+  
+  .next2 {
+    right: 10px;
+  }
+  
+.prev{
+    left: 10px;
+}
+.next{
+    right: 10px;
+}
+  
+.prev3{
+    left: 10px;
+}
+.next3{
+    right: 10px;
+}.prev4{
+    left: 10px;
+}
+.next4{
+    right: 10px;
+}
+
+  
+a {
+    color: #363535;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+.projectlink.bright{
+color: white;
+background-color: #9dc885;
+}
+
+
+.projectlink2.bright{
+    color: white;
+    background-color: #9dc885;
+    }
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.socials a {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+footer {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+
+/* Small screens (less than 768px) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+  
+    section {
+        padding: 50px 5%;
+    }
+
+    #projects .project {
+        margin: 15px 0;
+    }
+
+    .socials {
+        margin-top: 20px;
+    }
+
+    .socials a {
+        font-size: 18px;
+        margin: 10px;
+    }
+
+    footer {
+        position: relative;
+        padding: 10px;
+    }
+}
+
+/* Extra small screens (less than 480px) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    input, textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .socials a {
+        font-size: 16px;
+        margin: 5px;
+    }
+}
+
+/* Medium screens (tablets, 768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    section {
+        padding: 50px 8%;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    #projects .project {
+        margin: 25px 0;
+    }
+}
+
+.show{
+  
+  transform: translateX(85px);  
+  transition: all 0.6s ease-in-out; 
+ 
+} 
+
+
+
+
+
+/* Default styles (for larger screens) */
+#nav-links {
+    display: flex;
+    
+}
+
+
+#hamburger-menu {
+    display: none;
+}
+
+/* For screens that are considered mobile (up to 767px) */
+@media (max-width: 767px) {
+    /* Hide the regular navbar links on mobile */
+    #nav-links {
+        display: none;
+    }
+
+    /* Show the hamburger menu */
+    #hamburger-menu {
+        display: block;
+    }
+
+    /* Sidebar styles */
+    #nav-links {
+        position: fixed;
+        top:0px;
+        left: 0px;
+        width: 200px;
+        height: 100%;
+        z-index: 99;
+        background-color: rgb(188, 213, 168,1);
+        backdrop-filter:blur(2px);
+        padding-top: 50px;
+        display: none; /* Start hidden */
+        flex-direction: column;
+        align-items: center;
+        animation: lr 1s cubic-bezier(0.075, 0.82, 0.165, 1) 1 ;
+       
+
+    }
+   
+@keyframes lr {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translate(0%);
+    }
+}
+    #nav-links ul {
+        list-style-type: none;
+        padding: 0;
+        width: 100%;
+        animation: lr 1s cubic-bezier(0.445, 0.05, 0.55, 0.95) 1 ;
+       
+    }
+
+    #nav-links ul li {
+        margin: 20px 0;
+        text-align: center;
+      
+    }
+
+    #nav-links ul li a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        display: block;
+        width: 100%;
+        text-align: center;
+     
+    }
+    #nav-links ul li a:hover{
+        background-color: rgb(79, 114, 96);
+transition: all 5ms ease-in;
+    }
+
+   
+    #nav-links.show {
+        display: flex;
+    }
+  
+    #home h1 {
+        font-size: 5vw !important;
+    }
+    #home p{
+        font-size: 2.5vw !important;
+    }
+    #home pre{
+        font-size: 2vw !important;
+    }
+    #home img{
+width: 80vw!important;
+height:90vw !important;
+    }
+
+    #about{
+        font-size: 2vw !important; 
+        text-align: center;
+
+    }
+    #projects h1 {
+        font-size: 5vw !important; 
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif!important;
+    }
+    #projects p{
+        font-size: 3vw  !important;
+        font-variant: small-caps;
+    }
+}
+
+
+#hamburger-menu button {
+    font-size: 30px;
+    background: transparent;
+    border: none;
+    color: #333;
+}
+
+
+body.no-scroll {
+    overflow: hidden;
+}
