@@ -82,7 +82,7 @@ section {
 
 #home {
     position: relative;
-    color: white;
+    color: black;
     min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
@@ -92,7 +92,7 @@ section {
 }
 
 #home.light{
-    color: #000000;
+    color: #ffffff;
 
 }
 #logo.light{
